@@ -1,0 +1,24 @@
+@-ms-viewport {
+    width: device-width; /* for Snap on MS Surface */
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box; /* width = actual visible width of box */
+}
+
+@import "bootstrap/bootstrap";
+@import "font-awesome/font-awesome";
+@import "__yamm";
+@import "_variables";
+@import "_mixins";
+@import "_helpers";
+
+body {
+	font-family: @base-font;
+  background-color: @base-bgc;
+  overflow-x: hidden;
+}
+
+@import "_smallest";

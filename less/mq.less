@@ -1,0 +1,25 @@
+@import "_base";
+
+@media (max-width: 351px) {
+	.main-nav .navbar-header .btn-filter,
+	.main-content .catalog .catalog-header-wrapper .catalog-header .sort-select {
+		display: none !important;
+	}
+}
+
+@media (max-width: @screen-xs-max) {
+	@import "_max-width-xs";
+}
+
+@media (min-width: @screen-sm-min) {
+	@import "_min-width-sm";
+}
+
+@media (min-width: @screen-md-min) {
+	@import "_min-width-md";	
+}
+
+@media (min-width: @screen-lg-min) {
+	@import "_min-width-lg";
+}
+

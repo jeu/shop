@@ -1,0 +1,688 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js no-mq lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js no-mq lt-ie9 lt-ie8 ie7" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js no-mq lt-ie9 ie8" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js mq" lang="en"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Shop</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- CSS for old IEs that don't support media queries -->
+        <!--[if (lt IE 9) & (!IEMobile)]>
+            <link href="css/ie.css" rel="stylesheet">
+        <![endif]-->
+
+        <!-- CSS for everyone else-->
+        <!--[if (gte IE 9) | (IEMobile)]><!-->
+        <link href="css/styles.css" rel="stylesheet">
+        <!--<![endif]-->
+
+        <script src="js/vendor/modernizr.custom.93990.js"></script>
+    </head>
+    <body>
+
+        <div class="header-wrapper">
+            <div class="container">
+                <header class="header" role="banner">
+                    <nav class="navbar yamm navbar-default main-nav" role="navigation">
+                     
+                        <div class="navbar-header">
+                          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#orbico-shop-navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                          </button>
+
+                          <button class="visible-xs navbar-toggle btn-filter" data-toggle="offcanvas">
+                            <span class="glyphicon glyphicon-filter"></span>
+                          </button>
+
+                          <a class="logo" href="#">
+                            <img src="img/brand-logo-cropped.png" alt="Orbico Shop">
+                          </a>
+
+                          <form class="navbar-form navbar-right collapse navbar-collapse search" role="search">
+                            <div class="search-group">
+                                <input class="search-box" type="text" placeholder="Search">
+                                <a class="search-submit-container" href="#"><img class="search-submit" src="img/magnifier.png" alt="Search"></a>
+                            </div>
+                          </form>
+                        </div>
+
+                        <div class="collapse navbar-collapse menu" id="orbico-shop-navbar-collapse">
+
+                          <form class="navbar-form navbar-left hidden-md hidden-lg menu-search" role="search">
+                            <input class="search-box" type="text" placeholder="Search">
+                            <a class="search-submit-container" href="#"><img class="search-submit" src="img/magnifier.png" alt="Search"></a>
+                          </form>
+                          
+                          <ul class="nav navbar-nav prim-nav">
+                            <li class="dropdown">
+                              <a href="#" class="dropdown-toggle prim-nav-drop" data-toggle="dropdown">Procter &amp; gamle <span class="caret"></span></a>
+                              <ul class="dropdown-menu" role="menu">
+                                <li>
+                                  <div class="yamm-content">
+                                    <div class="two-col">
+                                      <ul>
+                                        <li><a href="#">Menu item 1</a></li>
+                                        <li><a href="#">Menu item 1</a></li>
+                                        <li><a href="#">Menu item 1</a></li>  
+                                        <li><a href="#">Menu item 1</a></li>
+                                        <li><a href="#">Menu item 1</a></li>
+                                        <li><a href="#">Menu item 1</a></li>
+                                      </ul>
+                                        
+                                      <ul>
+                                        <li><a href="#">Menu item 2</a></li>
+                                        <li><a href="#">Menu item 2</a></li>
+                                        <li><a href="#">Menu item 2</a></li>  
+                                        <li><a href="#">Menu item 2</a></li>
+                                        <li><a href="#">Menu item 2</a></li>
+                                        <li><a href="#">Menu item 2</a></li>
+                                      </ul>                      
+                                    </div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </li>
+                            
+                            <li><a href="#">Kozmetika</a></li>
+                            <li><a href="#">Tehnika</a></li>
+                            <li><a href="#">Market</a></li>
+                            <li><a href="#">Igrače</a></li>    
+                          </ul>
+                        
+                          <ul class="nav navbar-nav navbar-right sec-nav">
+                            <li><a href="#help">Pomoč</a></li>
+                            <li><a href="#">Moj račun</a></li>
+                            <li><a href="#">Košarica (<span class="item-counter">0</span>)</a></li>       
+                          </ul>
+                           
+                        </div>
+                    </nav>
+                </header>
+            </div>
+        </div>
+        
+        <div class="container main-wrapper">
+      
+          <main class="row-offcanvas row-offcanvas-left main-content" role="main">
+
+            <aside class="col-xs-6 col-sm-3 product-filters sidebar-offcanvas" id="sidebar">
+              <h1 class="product-filters-heading">Filter products</h1>
+            
+                    <form>
+                        <fieldset class="filter">
+                         <legend class="filter-heading">By price</legend>
+
+                            <div class="checkbox">
+                              <label for="below50">
+                                <input type="checkbox" id="below50" value="below50">
+                                Below 50 €
+                              </label>
+                            </div>
+
+                            <div class="checkbox">
+                                <label for="50to99">
+                                <input type="checkbox" id="50to99" value="50to99">
+                                50 € - 99 €
+                                </label>
+                            </div>
+
+                            <div class="checkbox">
+                              <label for="100to199">
+                                <input type="checkbox" id="100to199" value="100to199">
+                                100 € - 199 €
+                              </label>
+                            </div>
+
+                            <div class="checkbox">
+                              <label for="200to500">
+                                <input type="checkbox" id="200to500" value="200to500">
+                                200 € - 500 €
+                              </label>
+                            </div>
+
+                            <div class="checkbox">
+                              <label for="above500">
+                                <input type="checkbox" id="above500" value="above500">
+                                Above 500 €
+                              </label>
+                            </div>    
+                        </fieldset>
+                
+                        <fieldset class="filter">
+                         <legend class="filter-heading">By brand</legend>
+
+                            <div class="checkbox">
+                              <label for="ariel">
+                                <input type="checkbox" id="ariel" value="ariel">
+                                Ariel
+                              </label>
+                            </div>
+            
+                            <div class="checkbox">
+                              <label for="dash">
+                                <input type="checkbox" id="dash" value="dash">
+                                Dash
+                              </label>
+                            </div> 
+                             
+                            <div class="checkbox">
+                              <label for="dreft">
+                                <input type="checkbox" id="dreft" value="dreft">
+                                Dreft
+                              </label>
+                            </div> 
+
+                            <div class="checkbox">
+                              <label for="lenor">
+                                <input type="checkbox" id="lenor" value="lenor">
+                                Lenor
+                              </label>
+                            </div> 
+
+                            <div class="checkbox">
+                              <label for="jar">
+                                <input type="checkbox" id="jar" value="jar">
+                                Jar
+                              </label>
+                            </div> 
+
+                            <div class="checkbox">
+                              <label for="pampers" id="pampers">
+                                <input type="checkbox" id="pampers" value="pampers">
+                                Pampers
+                              </label>
+                            </div> 
+                           
+                             
+                       </fieldset>
+            
+                       <fieldset class="filter">
+                         <legend class="filter-heading">Other filter</legend>
+
+                            <div class="checkbox">
+                              <label for="option1" id="option1">
+                                <input type="checkbox" id="option1" value="option1">
+                                Option 1
+                              </label>
+                            </div> 
+
+                            <div class="checkbox">
+                              <label for="option2" id="option1">
+                                <input type="checkbox" id="option2" value="option2">
+                                Option 2
+                              </label>
+                            </div>
+
+                            <div class="checkbox">
+                              <label for="option3" id="option3">
+                                <input type="checkbox" id="option3" value="option3">
+                                Option 3
+                              </label>
+                            </div>
+
+                            <div class="checkbox">
+                              <label for="option4" id="option4">
+                                <input type="checkbox" id="option4" value="option4">
+                                Option 4
+                              </label>
+                            </div>
+
+                            <div class="checkbox">
+                              <label for="option5" id="option5">
+                                <input type="checkbox" id="option1" value="option5">
+                                Option 5
+                              </label>
+                            </div>
+
+                            <div class="checkbox">
+                              <label for="option6" id="option6">
+                                <input type="checkbox" id="option6" value="option6">
+                                Option 6
+                              </label>
+                            </div>
+                       </fieldset>
+            
+                    </form>
+            </aside>
+
+            <div class="catalog">
+              <div class="catalog-header-wrapper">
+                    <div class="catalog-header">
+                        <h1 class="catalog-heading">Category name</h1>
+                                       
+                          <div class="form-group">
+                              <select class="sort-select">
+                                  <option value="lowprice">By price: low to high</option>
+                                  <option value="hightprice">By price: high to low</option>
+                                  <option value="az">By brand: A - Z</option>
+                                  <option value="za">By brand: Z - A</option>
+                                  <option value="popular" selected>Most popular first</option>
+                                  <option value="new">New products first</option>
+                              </select>
+                          </div>
+                    </div>
+              </div>
+
+              <div class="product-overview">
+                  <div class="product action"> <!-- needs "action" class for products that have action price -->
+                      <div class="thumbnail product-thumb"> 
+                        <a class="product-img-wrapper" href="#">
+                          <img src="img/items/a100.png" alt="Ariel detergent v prahu, 1.4 kg">
+                        </a>
+                          <div class="product-info">
+                              <h2 class="product-name">Ariel detergent v prahu, 1.4 kg</h2>
+                              <p class="product-price">
+                                <span class="action-price">100.00 €</span>
+                                <span class="regular-price">123.00 €</span>
+                              </p>
+
+                              <div class="product-amount-controls-wrapper">
+                                  <div class="input-group product-amount-controls">
+                                      <span class="input-group-btn">
+                                          <button type="button" class="btn btn-default btn-number btn-change-amount" disabled="disabled" data-type="minus" data-field="quant[1]">
+                                              <span class="fa fa-minus"></span>
+                                          </button>
+                                      </span>
+                                  
+                                      <input type="text" name="quant[1]" class="form-control input-number product-amount" value="1" min="1" max="99">
+                                  
+                                      <span class="input-group-btn">
+                                          <button type="button" class="btn btn-default btn-number btn-change-amount" data-type="plus" data-field="quant[1]">
+                                              <span class="fa fa-plus"></span>
+                                          </button>
+                                      </span>
+                                  </div>
+                              </div>
+
+                              <a href="#" class="btn btn-default btn-buy" role="button">Kupim</a>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="product action">
+                      <div class="thumbnail product-thumb"> 
+                        <a class="product-img-wrapper" href="#">
+                          <img src="img/items/a200.png" alt="Ariel Professional, odstranjevalec madežev">
+                        </a>
+                          <div class="product-info">
+                              <h2 class="product-name">Ariel Professional, odstranjevalec madežev</h2>
+                              <p class="product-price">
+                                <span class="action-price">101.00 €</span>
+                                <span class="regular-price">121.00 €</span>
+                              </p>
+
+                              <div class="product-amount-controls-wrapper">
+                                  <div class="input-group product-amount-controls">
+                                      <span class="input-group-btn">
+                                          <button type="button" class="btn btn-default btn-number btn-change-amount" disabled="disabled" data-type="minus" data-field="quant[2]">
+                                              <span class="fa fa-minus"></span>
+                                          </button>
+                                      </span>
+                                  
+                                      <input type="text" name="quant[2]" class="form-control input-number product-amount" value="1" min="1" max="99">
+                                  
+                                      <span class="input-group-btn">
+                                          <button type="button" class="btn btn-default btn-number btn-change-amount" data-type="plus" data-field="quant[2]">
+                                              <span class="fa fa-plus"></span>
+                                          </button>
+                                      </span>
+                                  </div>
+                              </div>
+
+                              <a href="#" class="btn btn-default btn-buy" role="button">Kupim</a>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="product"> 
+                      <div class="thumbnail product-thumb"> 
+                        <a class="product-img-wrapper" href="#">
+                          <img src="img/items/a300.png" alt="Dreft tekoči detergent 1L">
+                        </a>
+                          <div class="product-info">
+                              <h2 class="product-name">Dreft tekoči detergent 1L</h2>
+                              <p class="product-price">
+                                <span class="action-price">100.00 €</span>
+                                <span class="regular-price">122.00 €</span>
+                              </p>
+
+                              <div class="product-amount-controls-wrapper">
+                                  <div class="input-group product-amount-controls">
+                                      <span class="input-group-btn">
+                                          <button type="button" class="btn btn-default btn-number btn-change-amount" disabled="disabled" data-type="minus" data-field="quant[3]">
+                                              <span class="fa fa-minus"></span>
+                                          </button>
+                                      </span>
+                                  
+                                      <input type="text" name="quant[3]" class="form-control input-number product-amount" value="1" min="1" max="99">
+                                  
+                                      <span class="input-group-btn">
+                                          <button type="button" class="btn btn-default btn-number btn-change-amount" data-type="plus" data-field="quant[3]">
+                                              <span class="fa fa-plus"></span>
+                                          </button>
+                                      </span>
+                                  </div>
+                              </div>
+
+                              <a href="#" class="btn btn-default btn-buy" role="button">Kupim</a>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="product action"> 
+                      <div class="thumbnail product-thumb"> 
+                        <a class="product-img-wrapper" href="#">
+                          <img src="img/items/a400.png" alt="Lenor Summer mehčalec, 1L">
+                        </a>
+                          <div class="product-info">
+                              <h2 class="product-name">Lenor Summer mehčalec, 1L</h2>
+                              <p class="product-price">
+                                <span class="action-price">103.00 €</span>
+                                <span class="regular-price">123.00 €</span>
+                              </p>
+
+                              <div class="product-amount-controls-wrapper">
+                                  <div class="input-group product-amount-controls">
+                                      <span class="input-group-btn">
+                                          <button type="button" class="btn btn-default btn-number btn-change-amount" disabled="disabled" data-type="minus" data-field="quant[4]">
+                                              <span class="fa fa-minus"></span>
+                                          </button>
+                                      </span>
+                                  
+                                      <input type="text" name="quant[4]" class="form-control input-number product-amount" value="1" min="1" max="99">
+                                  
+                                      <span class="input-group-btn">
+                                          <button type="button" class="btn btn-default btn-number btn-change-amount" data-type="plus" data-field="quant[4]">
+                                              <span class="fa fa-plus"></span>
+                                          </button>
+                                      </span>
+                                  </div>
+                              </div>
+
+                              <a href="#" class="btn btn-default btn-buy" role="button">Kupim</a>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="product"> 
+                      <div class="thumbnail product-thumb"> 
+                        <a class="product-img-wrapper" href="#">
+                          <img src="img/items/a500.png" alt="Jar Lemon, detergent za ročno pomivanje posode, 1L">
+                        </a>
+                          <div class="product-info">
+                              <h2 class="product-name">Jar Lemon, detergent za ročno pomivanje posode, 1L</h2>
+                              <p class="product-price">
+                                <!-- <span class="action-price">100.00 €</span> -->
+                                <span class="regular-price">124.00 €</span>
+                              </p>
+
+                              <div class="product-amount-controls-wrapper">
+                                  <div class="input-group product-amount-controls">
+                                      <span class="input-group-btn">
+                                          <button type="button" class="btn btn-default btn-number btn-change-amount" disabled="disabled" data-type="minus" data-field="quant[5]">
+                                              <span class="fa fa-minus"></span>
+                                          </button>
+                                      </span>
+                                  
+                                      <input type="text" name="quant[5]" class="form-control input-number product-amount" value="1" min="1" max="99">
+                                  
+                                      <span class="input-group-btn">
+                                          <button type="button" class="btn btn-default btn-number btn-change-amount" data-type="plus" data-field="quant[5]">
+                                              <span class="fa fa-plus"></span>
+                                          </button>
+                                      </span>
+                                  </div>
+                              </div>
+
+                              <a href="#" class="btn btn-default btn-buy" role="button">Kupim</a>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="product action"> 
+                      <div class="thumbnail product-thumb"> 
+                        <a class="product-img-wrapper" href="#">
+                          <img src="img/items/a600.png" alt="Jar tablete za strojno pomivanje posode, 30 kapsul">
+                        </a>
+                          <div class="product-info">
+                              <h2 class="product-name">Jar tablete za strojno pomivanje posode, 30 kapsul</h2>
+                              <p class="product-price">
+                                <span class="action-price">105.00 €</span>
+                                <span class="regular-price">125.00 €</span>
+                              </p>
+
+                              <div class="product-amount-controls-wrapper">
+                                  <div class="input-group product-amount-controls">
+                                      <span class="input-group-btn">
+                                          <button type="button" class="btn btn-default btn-number btn-change-amount" disabled="disabled" data-type="minus" data-field="quant[6]">
+                                              <span class="fa fa-minus"></span>
+                                          </button>
+                                      </span>
+                                  
+                                      <input type="text" name="quant[6]" class="form-control input-number product-amount" value="1" min="1" max="99">
+                                  
+                                      <span class="input-group-btn">
+                                          <button type="button" class="btn btn-default btn-number btn-change-amount" data-type="plus" data-field="quant[6]">
+                                              <span class="fa fa-plus"></span>
+                                          </button>
+                                      </span>
+                                  </div>
+                              </div>
+
+                              <a href="#" class="btn btn-default btn-buy" role="button">Kupim</a>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="product action"> 
+                      <div class="thumbnail product-thumb"> 
+                        <a class="product-img-wrapper" href="#">
+                          <img src="img/items/a700.png" alt="Pampers Premium care MIDI plenice">
+                        </a>
+                          <div class="product-info">
+                              <h2 class="product-name">Pampers Premium care MIDI plenice</h2>
+                              <p class="product-price">
+                                <span class="action-price">106.00 €</span>
+                                <span class="regular-price">126.00 €</span>
+                              </p>
+
+                              <div class="product-amount-controls-wrapper">
+                                  <div class="input-group product-amount-controls">
+                                      <span class="input-group-btn">
+                                          <button type="button" class="btn btn-default btn-number btn-change-amount" disabled="disabled" data-type="minus" data-field="quant[7]">
+                                              <span class="fa fa-minus"></span>
+                                          </button>
+                                      </span>
+                                  
+                                      <input type="text" name="quant[7]" class="form-control input-number product-amount" value="1" min="1" max="99">
+                                  
+                                      <span class="input-group-btn">
+                                          <button type="button" class="btn btn-default btn-number btn-change-amount" data-type="plus" data-field="quant[7]">
+                                              <span class="fa fa-plus"></span>
+                                          </button>
+                                      </span>
+                                  </div>
+                              </div>
+
+                              <a href="#" class="btn btn-default btn-buy" role="button">Kupim</a>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="product action"> 
+                      <div class="thumbnail product-thumb"> 
+                        <a class="product-img-wrapper" href="#">
+                          <img src="img/items/a800.png" alt="Always Platinum vložkig">
+                        </a>
+                          <div class="product-info">
+                              <h2 class="product-name">Always Platinum vložki</h2>
+                              <p class="product-price">
+                                <span class="action-price">107.00 €</span>
+                                <span class="regular-price">127.00 €</span>
+                              </p>
+
+                              <div class="product-amount-controls-wrapper">
+                                  <div class="input-group product-amount-controls">
+                                      <span class="input-group-btn">
+                                          <button type="button" class="btn btn-default btn-number btn-change-amount" disabled="disabled" data-type="minus" data-field="quant[8]">
+                                              <span class="fa fa-minus"></span>
+                                          </button>
+                                      </span>
+                                  
+                                      <input type="text" name="quant[8]" class="form-control input-number product-amount" value="1" min="1" max="99">
+                                  
+                                      <span class="input-group-btn">
+                                          <button type="button" class="btn btn-default btn-number btn-change-amount" data-type="plus" data-field="quant[8]">
+                                              <span class="fa fa-plus"></span>
+                                          </button>
+                                      </span>
+                                  </div>
+                              </div>
+
+                              <a href="#" class="btn btn-default btn-buy" role="button">Kupim</a>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="product action"> 
+                      <div class="thumbnail product-thumb"> 
+                        <a class="product-img-wrapper" href="#">
+                          <img src="img/items/a900.png" alt="Tampax tamponi">
+                        </a>
+                          <div class="product-info">
+                              <h2 class="product-name">Tampax tamponi</h2>
+                              <p class="product-price">
+                                <span class="action-price">108.00 €</span>
+                                <span class="regular-price">128.00 €</span>
+                              </p>
+
+                              <div class="product-amount-controls-wrapper">
+                                  <div class="input-group product-amount-controls">
+                                      <span class="input-group-btn">
+                                          <button type="button" class="btn btn-default btn-number btn-change-amount" disabled="disabled" data-type="minus" data-field="quant[9]">
+                                              <span class="fa fa-minus"></span>
+                                          </button>
+                                      </span>
+                                  
+                                      <input type="text" name="quant[9]" class="form-control input-number product-amount" value="1" min="1" max="99">
+                                  
+                                      <span class="input-group-btn">
+                                          <button type="button" class="btn btn-default btn-number btn-change-amount" data-type="plus" data-field="quant[9]">
+                                              <span class="fa fa-plus"></span>
+                                          </button>
+                                      </span>
+                                  </div>
+                              </div>
+
+                              <a href="#" class="btn btn-default btn-buy" role="button">Kupim</a>
+                          </div>
+                      </div>
+                  </div>
+
+
+
+
+              </div>
+            </div>
+          </main>
+        </div>
+
+        <div class="footer-wrapper">
+            <div class="container">
+                <footer class="footer">
+
+                    <div class="footer-nav-wrapper">
+                        <nav class="footer-nav" id="help">
+                            <div class="footer-help">
+                                <h1 class="footer-heading">Customer services</h1>
+                                <ul>
+                                    <li><a href="#">Delivery information</a></li>
+                                    <li><a href="#">Track my order</a></li>
+                                    <li><a href="#">Installation services</a></li>
+                                    <li><a href="#">Recyclin information</a></li>
+                                    <li><a href="#">Returns &amp; cancellations</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-help">
+                                <h1 class="footer-heading">Shopping with Orbico shop</h1>
+                                <ul>
+                                    <li><a href="#">Order online &amp; collect in-store</a></li>
+                                    <li><a href="#">Price promise</a></li>
+                                    <li><a href="#">Payment &amp; finance options</a></li>
+                                    <li><a href="#">Privacy &amp; cookies</a></li>
+                                </ul>
+                            </div>
+                            <div class="clearfix visible-sm-block "></div>
+                        
+                            <div class="footer-help">
+                                <h1 class="footer-heading">We are here to help</h1>
+                                <ul>
+                                    <li><a href="#">Order online &amp; collect in-store</a></li>
+                                    <li><a href="#">Price promise</a></li>
+                                    <li><a href="#">Payment &amp; finance options</a></li>
+                                    <li><a href="#">Privacy &amp; cookies</a></li>
+                                </ul>
+                            </div>
+                        
+                            <div class="footer-newsletter">
+                                <h1 class="footer-heading">Subscribe to our newsletter</h1>
+                                <!-- <form class="form-inline" role="form">
+                                  <div class="form-group">
+                                    <label class="sr-only" for="newsletter">Email address</label>
+                                    <input type="email" class="form-control" id="newsletter" placeholder="Enter address">
+                                  </div>
+                                  <button type="submit" class="btn btn-default">Subscribe</button>
+                                </form> -->
+                                <form class="subscription">
+                                <div class="subscription-group">
+                                    <input class="subscription-box" type="text" placeholder="Enter address">
+                                    <button class="subscription-submit">Subscribe</button>  
+                                </div>
+                              </form>
+                            </div>
+                            <div class="clearfix visible-sm-block "></div>
+                        
+                        </nav>
+                    </div>
+
+                    <div class="footer-additional-info">
+                        <div class="copy">
+                            <p>Copyright &copy; 2014. Brand group. All right reserved. <a href="#">Privacy policy</a> | <a href="#">Terms &amp; conditions</a></p>
+                        </div>
+
+                        <div class="social">
+                            <a href="#"><span class="fa fa-facebook"></span></a>
+                            <a href="#"><span class="fa fa-twitter"></span></a>
+                            <a href="#"><span class="fa fa-pinterest"></span></a>
+                            <a href="#"><span class="fa fa-google-plus"></span></a>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+    </body>
+</html>
